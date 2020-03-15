@@ -76,8 +76,8 @@ namespace CSharp_Vanin_02.Models
             _westernZodiac = FindWesternZodiac();
             _chineseZodiac = FindChineseZodiac();
         }
-        public Person(string name, string surname, string email): this(name, surname,email,DateTime.Today) { }
-        public Person(string name, string surname, DateTime birthDate) : this(name, surname, "user@gmail.com", birthDate) { }
+        private Person(string name, string surname, string email): this(name, surname,email,DateTime.Today) { }
+        private Person(string name, string surname, DateTime birthDate) : this(name, surname, "user@gmail.com", birthDate) { }
         
         #endregion
 
